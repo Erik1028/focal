@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Focal · your iPhone as a wireless webcam for Windows</title>
+<meta name="description" content="Use your iPhone as a wireless webcam on your Windows PC. The phone opens a page in Safari: no phone app, no cable, no account. Works in Discord, Zoom, Teams and OBS.">
+<link rel="canonical" href="https://erik1028.github.io/focal/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Erik1028">
+<meta property="og:url" content="https://erik1028.github.io/focal/">
+<meta property="og:title" content="Focal">
+<meta property="og:description" content="Your iPhone as a wireless webcam for your Windows PC. No phone app, no cable, no account.">
+<meta property="og:image" content="https://erik1028.github.io/focal/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0b0d10">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Focal", "url": "https://erik1028.github.io/focal/", "description": "Turns an iPhone into a wireless webcam for a Windows PC over Wi-Fi. The phone opens a page in Safari and streams with WebRTC; Focal shows the picture and can feed it to a virtual camera for Discord, Zoom, Teams or OBS.", "image": "https://erik1028.github.io/focal/og.jpg", "operatingSystem": "Windows 10, Windows 11", "applicationCategory": "MultimediaApplication", "downloadUrl": "https://github.com/Erik1028/focal/releases/latest", "isAccessibleForFree": true, "inLanguage": "en", "license": "https://opensource.org/licenses/MIT", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "author": {"@type": "Person", "name": "Erik1028", "url": "https://github.com/Erik1028"}, "sameAs": ["https://github.com/Erik1028/focal"]}</script>
+<link rel="icon" href="favicon.png" type="image/png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-repo="Erik1028/focal">
+
+<div class="band">
+<header class="top">
+<div class="wrap">
+<a class="logo" href="#top"><img src="icon.png" width="30" height="30" alt="">Focal</a>
+<nav aria-label="Sections"><a class="opt" href="#how">How it works</a><a class="opt" href="#setup">Setup</a><a href="#setup">Download</a><a href="https://erik1028.github.io/">More apps</a></nav>
+</div>
+</header>
+<section class="intro wrap" id="top">
+<div class="intro-text">
+<h1>Focal</h1>
+<p>Your iPhone's camera on your PC, over Wi‑Fi. The phone just opens a page in Safari: no app to install on it, no cable, no account. Watch it in Focal's window, or use it as a webcam in Discord, Zoom, Teams and OBS.</p>
+<div class="get">
+<a class="btn" href="https://github.com/Erik1028/focal/releases/latest" data-asset="^Focal-SingleFile\.exe$"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M6 10l6 6 6-6M4 21h16"/></svg>Download for Windows<span class="size"></span></a>
+<span class="mono" id="ver">v2.1 · 4 Jul 2026</span>
+<span class="alt">One file, nothing to install. Or the <a href="https://github.com/Erik1028/focal/releases/latest" data-asset="Portable\.zip$">portable zip<span class="size"></span></a>.</span>
+</div>
+</div>
+<figure class="scene" aria-label="The phone page streaming a picture, and the same picture in Focal's window on the PC">
+<div class="pc"><div class="pc-bar" aria-hidden="true"><i></i><i></i><i></i><span>Focal — receiver</span></div><img src="img/pc-window.webp" width="1040" height="620" alt="Focal's window on the PC: the phone's picture fills it, with Server, Phone and Webcam status at the top and a Stop button"></div>
+<div class="phone"><img src="img/phone-live.webp" width="1400" height="646" alt="The phone page in Safari, live: lens buttons 0.5×, 1×, 2× and Front, a zoom slider, and the stream's size, frame rate and bitrate"></div>
+<svg class="link" viewBox="0 0 620 470" aria-hidden="true"><path d="M398 400H560V346"/><rect x="420" y="410" width="128" height="24" rx="12"/><text x="484" y="426.5" text-anchor="middle">Wi‑Fi · WebRTC</text></svg>
+<span class="vf tl" aria-hidden="true"></span><span class="vf tr" aria-hidden="true"></span><span class="vf bl" aria-hidden="true"></span><span class="vf br" aria-hidden="true"></span>
+</figure>
+</section>
+</div>
+
+<main class="wrap">
+<p class="note">The pictures on this page are Focal's real phone page and PC window, showing a made-up demo picture instead of a camera.</p>
+
+<section class="block" id="how">
+<h2>How it works</h2>
+<ol class="flow" data-stagger="120">
+<li><span class="step">1</span><h3>iPhone</h3><p>Safari opens Focal's camera page and sends the video with WebRTC, the same technology video calls use in the browser.</p></li>
+<li><span class="step">2</span><h3>Focal on your PC</h3><p>Shows the live picture, decoded by a built-in browser engine so it stays smooth. The video goes straight from the phone to the PC on your network.</p></li>
+<li><span class="step">3</span><h3>Your calls <em>(optional)</em></h3><p>A virtual camera lets Discord, Zoom, Teams or OBS pick the phone like any webcam: Unity Capture, with no OBS needed, or the OBS Virtual Camera.</p></li>
+</ol>
+</section>
+
+<section class="block split" id="phone">
+<div class="split-text" data-reveal>
+<h2>On the phone</h2>
+<ul class="list">
+<li><b>Lenses and zoom.</b> 0.5×, 1×, 2× and Front buttons, a zoom slider up to 8×, or pinch. Zooming switches to the right lens, like the Camera app. Double-tap flips front and back; hold to mirror the preview.</li>
+<li><b>Quality you choose.</b> 480p, 720p or 1080p; 24, 30 or 60 fps; 2 to 40 Mbps, or Auto bitrate. 60 fps works on the main camera at 720p.</li>
+<li><b>Detail zoom.</b> Optional: captures at the sensor's full size and crops from that, for a sharper zoom (costs more battery).</li>
+<li><b>Picture and framing.</b> Brightness, contrast, saturation and warmth, sent with the video. 180° rotate, a framing grid and a level.</li>
+<li><b>While streaming.</b> Live size, frame rate, bitrate and time on screen, a snapshot button, and a moon button that blacks out the screen to save battery while the stream keeps going.</li>
+<li><b>Stays on.</b> Keeps the screen awake, and reconnects by itself when you come back from another app. Add it to the Home Screen and it opens full screen.</li>
+</ul>
+</div>
+<figure class="split-pic phone-frame" data-reveal><img src="img/phone-settings.webp" width="1400" height="646" alt="The phone page's settings sheet: bitrate, 30 fps, 720p, Auto bitrate, Auto-start, the active camera, telephoto zoom 2× to 5×, Detail zoom and Mirror preview" loading="lazy"><figcaption>The settings sheet, opened with the gear.</figcaption></figure>
+</section>
+
+<section class="block split rev" id="pc">
+<div class="split-text" data-reveal>
+<h2>On the PC</h2>
+<ul class="list">
+<li><b>The picture fills the window</b>, with status for the server, the phone and the webcam, and a Stop button on top. <kbd>F11</kbd> goes full screen.</li>
+<li><b>Settings</b> (the gear, or <kbd>Ctrl</kbd>+<kbd>,</kbd>) holds the QR code, the two addresses with Copy buttons, the virtual camera choice (Auto, Unity Capture or OBS Virtual Camera) and the setup tools.</li>
+<li><b>Light on the phone.</b> Minimizing the window pauses its preview, so the phone stops sending that copy of the video.</li>
+</ul>
+</div>
+<figure class="split-pic" data-reveal><img class="settings" src="img/pc-settings.png" width="392" height="609" alt="Focal's Settings window: a QR code, step 1 Install certificate and step 2 Open the camera with their addresses, the virtual camera choice, and buttons for Set up OBS, Unity Capture and New certificate" loading="lazy"><figcaption>Settings, with a demo address.</figcaption></figure>
+</section>
+
+<section class="block two" id="setup" data-reveal>
+<div><h2>Set up</h2><p class="side">About five minutes, once. Phone and PC must be on the same network.</p></div>
+<div>
+<ol>
+<li><a href="https://github.com/Erik1028/focal/releases/latest" data-asset="^Focal-SingleFile\.exe$">Download <code>Focal-SingleFile.exe</code></a><span class="size"></span> and run it. The first start unpacks it to <code>%LOCALAPPDATA%\Focal</code> (about 20 seconds); after that it starts at once. Prefer a folder? Unzip the <a href="https://github.com/Erik1028/focal/releases/latest" data-asset="Portable\.zip$">portable zip</a> anywhere and run <code>Focal.exe</code>.</li>
+<li>When Windows Firewall asks, allow Focal on <b>Private networks</b>.</li>
+<li>On the iPhone, trust Focal's certificate. Safari only gives a page the camera over a trusted HTTPS connection, and on your own network that means a certificate your PC makes for itself.
+<ol class="sub">
+<li>In Safari, open the <b>Install certificate</b> address from Focal's Settings (it looks like <code>http://192.168.x.x:8080/</code>) and download the profile.</li>
+<li><i>Settings › Profile Downloaded › Install.</i></li>
+<li><i>Settings › General › About › Certificate Trust Settings</i>, and turn on <b>PhoneCam Local CA</b>.</li>
+</ol>
+</li>
+<li>Scan the QR code in Focal's Settings with the iPhone camera, press <b>Start</b> and allow the camera. The picture appears on the PC.</li>
+</ol>
+<p class="aside">Windows SmartScreen may warn because Focal isn't signed: <i>More info › Run anyway</i>. The certificate is still called PhoneCam, Focal's old name, so phones set up before the rename keep working.</p>
+</div>
+</section>
+
+<section class="block" id="calls" data-reveal>
+<h2>Use it in Discord, Zoom or Teams</h2>
+<p class="lead">Watching the picture in Focal's window needs nothing more. To use the phone as a webcam in a call, add a virtual camera once:</p>
+<div class="cols">
+<div><h3>Unity Capture <span>· no OBS</span></h3><p>In Focal's Settings, press <b>Unity Capture</b>. It downloads <a href="https://github.com/schellingb/UnityCapture">Unity Capture</a> and registers it, asking for administrator rights once. Then pick <b>Unity Video Capture</b> as the camera in your call.</p></div>
+<div><h3>OBS</h3><p>In OBS Studio, turn on <i>Tools › WebSocket Server Settings › Enable</i> once. With OBS open, press <b>Set up OBS</b> in Focal (it asks for the WebSocket password if there is one): it adds the phone as a source and starts the OBS Virtual Camera. Pick <b>OBS Virtual Camera</b> in your call.</p></div>
+</div>
+<p class="aside">Focal sends video only. Keep using your usual microphone.</p>
+</section>
+
+<section class="block" id="private" data-reveal>
+<h2>Stays at home</h2>
+<ul class="list wide">
+<li><b>No cloud.</b> The video goes from your phone to your PC over your own network. No account, no relay server, no telemetry. Like any WebRTC app, the phone asks a public STUN server (Google's) for its network address; the picture itself never goes there.</li>
+<li><b>A key in the QR code.</b> Other devices on your Wi-Fi can't take over or watch the camera without it, and Focal turns away relay connections that come from other websites.</li>
+<li><b>Your certificate stays yours.</b> It's made on your PC on the first start, and its private key never leaves it.</li>
+</ul>
+</section>
+
+<section class="block" id="limits" data-reveal>
+<h2>Good to know</h2>
+<ul class="facts">
+<li><b>Windows 10 or 11</b>On the PC.</li>
+<li><b>iPhone with Safari</b>What Focal is made and tested for.</li>
+<li><b>Same network</b>Phone and PC on the same Wi‑Fi or LAN.</li>
+<li><b>Video only</b>No sound: keep your usual microphone.</li>
+<li><b>About 230 MB</b>It brings its own Python and a browser engine for the preview.</li>
+<li><b>Free and open source</b>MIT license, source on GitHub.</li>
+</ul>
+</section>
+
+<section class="block" data-reveal>
+<h2>Latest update</h2>
+<div class="latest" id="latest"><span class="v">v2.1</span><div><h3>Sharper capture, new name and icon</h3><p><a href="https://github.com/Erik1028/focal/releases">All releases</a></p></div></div>
+</section>
+
+</main>
+
+<footer>
+<div class="wrap">
+<p>Focal by <a href="https://github.com/Erik1028">Erik1028</a>. Free and open source, MIT license. Not affiliated with Apple; iPhone and Safari are trademarks of Apple Inc. Unity Capture is © Bernhard Schelling, MIT license.</p>
+<span><a href="https://erik1028.github.io/">More apps</a> · <a href="https://github.com/Erik1028/focal">Source</a> · <a href="https://github.com/Erik1028/focal/releases">Releases</a></span>
+</div>
+</footer>
+
+<script src="site.js"></script>
+<script src="motion.js"></script>
+</body>
+</html>
